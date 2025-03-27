@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="text-white nav-link active" href="index.html">Hlavní stránka</a>
-        </li>
-        <li class="nav-item">
-            <a class="text-white nav-link" href="items.html">Produkty</a>
-        </li>
-    </ul>
-</div>
+        <h2 class="navbar-brand">ZlinWEB</h2>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Hlavní stránka</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="items.html">Produkty</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
+<header id="Landing" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) ), url('imgs/WebDesignExample.jpg'); background-position: center;
+background-position-x: left"
+        class="py-5 jumbotron text-center text-white justify-content-between flex-row ">
+    <div class="py-5">
+        <h1 class="jumbotron-heading">ZlinWEB</h1>
+        <p class="lead fst-italic">Weby pro každého</p>
+        <a class="btn btn-light btn-lg mx-2" href="#AboutUs">O nás</a>
+        <a class="btn btn-light btn-lg mx-2" href="#">Nabídka služeb</a>
+    </div>
+</header>
+
+<div id="AboutUs" class="m-5">
+
+    <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1 shadow">
+            <img class="img-fluid" src="https://placehold.co/800x400">
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 d-sm-flex flex-column align-items-center my-sm-5 align-items-lg-start">
+            <h2>H2</h2>
+            <p>Text</p>
+            <a href="#" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+</div>
 
 </body>
 <script src="./js/bootstrap.min.js"></script>
