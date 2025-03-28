@@ -2,44 +2,56 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <linK rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom_effects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
-        <h2 class="navbar-brand">ZlinWEB</h2>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">Hlavní stránka</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="items.html">Produkty</a>
-            </li>
-        </ul>
+        <h1 class="navbar-brand">ZlinWEB</h1>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Hlavní stránka</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="items.html">Produkty</a>
+                </li>
+            </ul>
+
+        </div>
     </div>
 </nav>
 
-<header id="Landing" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) ), url('imgs/WebDesignExample.jpg'); background-position: center;
+<header id="Landing" style="background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0) ), url('imgs/WebDesignExample.jpg'); background-position: center;
 background-position-x: left"
-        class="py-5 jumbotron text-center text-white justify-content-between flex-row ">
+        class="py-5 jumbotron text-center text-white justify-content-between ">
     <div class="py-5">
         <h1 class="jumbotron-heading">ZlinWEB</h1>
         <p class="lead fst-italic">Weby pro každého</p>
-        <a class="btn btn-light btn-lg mx-2" href="#AboutUs">O nás</a>
-        <a class="btn btn-light btn-lg mx-2" href="#Services">Chci web</a>
+        <a class="btn btn-light btn-lg mx-2 shadow" href="#">O nás</a>
+        <a class="btn btn-light btn-lg mx-2 shadow" href="#Services">Chci web</a>
     </div>
 </header>
 
 <section id="Services" class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-12 mb-4">
-            <div class="card">
+        <div class="col-lg-3 mb-4">
+            <div class="card shadow-lg card-rotate-to-right">
                 <div class="card-body d-flex flex-column align-items-center">
-                    <p class="card-title text-center display-6">Web Basic</p>
+                    <h1 class="card-title text-center">Web Basic</h1>
                     <span class="card-text text-light-emphasis mb-2">Pro OSVČ</span>
-                    <img class="card-img-top   " src="https://placehold.co/600x400">
+                    <img class="card-img-top" src="https://placehold.co/600x400">
 
                     <ul class="list-group col-12 text-center my-3">
                         <li class="list-group-item m"><i class=" me-1 bi bi-check2 text-success"></i>Jednoduchý web (1–3
@@ -72,12 +84,12 @@ background-position-x: left"
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-lg">
                 <div class="card-body d-flex flex-column align-items-center">
-                    <p class="card-title text-center display-6">Web Deluxe</p>
+                    <h1 class="card-title text-center ">Web Deluxe</h1>
                     <span class="card-text text-light-emphasis mb-2">Pro velké společnosti</span>
-                    <img class="card-img-top   " src="https://placehold.co/600x400">
+                    <img class="card-img-top" src="https://placehold.co/600x400">
 
                     <ul class="list-group col-12 text-center  my-3">
                         <li class="list-group-item"><i class=" me-1 bi bi-check2 text-success"></i>Prémiový web na míru
@@ -116,12 +128,12 @@ background-position-x: left"
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-12 mb-4">
-            <div class="card">
+        <div class="col-lg-3 mb-4">
+            <div class="card shadow-lg card-rotate-to-left">
                 <div class="card-body d-flex flex-column align-items-center">
-                    <p class="card-title text-center display-6">Web Premium</p>
+                    <h1 class="card-title text-center ">Web Premium</h1>
                     <span class="card-text text-light-emphasis mb-2">Pro malé společnosti</span>
-                    <img class="card-img-top   " src="https://placehold.co/600x400">
+                    <img class="card-img-top" src="https://placehold.co/600x400">
                     <ul class="list-group col-12 text-center  my-3">
                         <li class="list-group-item"><i class=" me-1 bi bi-check2 text-success"></i>Profesionální web na
                             míru
@@ -165,26 +177,133 @@ background-position-x: left"
 
 <section id="ContactUS" class="d-flex justify-content-center align-items-center flex-column my-5">
     <h1 class="my-4">Kontaktuj nás</h1>
-    <form class="col-6 d-flex align-items-center flex-column">
-        <div class="container-fluid d-flex justify-content-evenly">
-            <div class="col-5">
-                <label for="Email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+    <form class="col-12 col-md-9 col-xl-7 d-flex align-items-center flex-column">
+        <div class="container-fluid d-flex align-items-end justify-content-evenly flex-column flex-md-row">
+            <div class="col-md-5 col-12">
+                <label for="Email" class="form-label">Váš email</label>
+                <input type="email" required class="form-control" id="Email" aria-describedby="emailHelp">
             </div>
-            <div class="col-5">
-                <label for="Name" class="form-label">Name</label>
-                <input type="email" class="form-control" id="Name" aria-describedby="nameHelp">
+            <div class="col-md-5 col-12">
+                <label for="Name" class="form-label">Vaše jméno</label>
+                <input type="text" required class="form-control" id="Name" aria-describedby="nameHelp">
             </div>
         </div>
-
+        <div class="col-11 col-md-10 col-xl-10 my-3">
+            <label for="Message" class="form-label">Vaše zpráva</label>
+            <textarea class="form-control" id="Message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary my-3 col-11 col-md-9 col-xl-7">Odeslat</button>
     </form>
 </section>
+
+<section class="container col-md-6 my-4" id="FAQ">
+    <h1 class="text-center my-2">FAQ</h1>
+    <div class="accordion ">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    Jak mohu začít?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Stačí nás kontaktovat přes formulář na stránce
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Co když budu chtít na webu něco změnit po dokončení?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    U <strong>Basic a Premium</strong> verze nejsou žádné další úpravy zahrnuté v ceně, budete si to muset objednat. U <strong>Deluxe</strong> balíčků nabízíme určitý počet revizí zdarma, další úpravy jsou možné za příplatek.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Jak probíhá platba za web?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Platba probíhá ve dvou fázích:
+                    <ol>
+                        <li>
+                            <strong>Záloha</strong> (50 %) před zahájením práce
+                        </li>
+                        <li>
+                            <strong>Doplatek</strong> po dokončení a schválení webu
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Je web optimalizovaný pro vyhledávače (SEO)?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Ano, každý web má základní SEO optimalizaci. U <strong>Premium a Deluxe</strong> balíčků nabízíme pokročilou SEO strategii pro lepší viditelnost ve vyhledávačích.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Můžete mi pomoci s doménou a hostingem?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Ano, rádi vám poradíme s výběrem domény a hostingu. U <strong>Deluxe balíčku</strong> vám vše nastavíme a postaráme se o správu webu.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Poskytujete technickou podporu?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <strong>Basic:</strong> Bez technické podpory (podpora za příplatek)
+                        </li>
+                        <li>
+                            <strong>Premium:</strong> 1 měsíc podpory zdarma + možnost dlouhodobé správy
+                        </li>
+                        <li>
+                            <strong>Deluxe:</strong> 3 měsíce podpory zdarma + možnost dlouhodobé správy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="py-4 bg-light text-center">
     <span>Web byl vytvořen Markem Polamem</span>
 </footer>
 
 
-</body>
 <script src="./js/bootstrap.min.js"></script>
+</body>
 </html>
