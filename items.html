@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ZlinWEB</title>
 
-    <linK rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="custom.css" rel="stylesheet">
     <link rel="stylesheet" href="custom_effects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -27,9 +27,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="items.html">Produkty</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer"><i class=" mx-1 bi bi-basket2-fill"></i></a>
                 </li>
             </ul>
 
@@ -81,7 +78,13 @@ background-position-x: center;"
                         </li>
                     </ul>
 
-                    <a href="#ContactUS" class="btn btn-outline-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Basic"
+                            data-product-description="Basic web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
@@ -125,7 +128,13 @@ background-position-x: center;"
                         </li>
                     </ul>
 
-                    <a href="#ContactUS" class="btn btn-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Delux"
+                            data-product-description="Delux web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
@@ -168,13 +177,18 @@ background-position-x: center;"
                             nejsou zahrnuty v ceně
                         </li>
                     </ul>
-                    <a href="#ContactUS" class="btn btn-outline-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Premium"
+                            data-product-description="Prémiový web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <section id="Services2" class="container mt-5">
     <div class="row justify-content-around">
         <div class="col-lg-4 col-xxl-3 mb-4">
@@ -211,7 +225,13 @@ background-position-x: center;"
                         </li>
                     </ul>
 
-                    <a href="#ContactUS" class="btn btn-outline-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Basic"
+                            data-product-description="Basic web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
@@ -255,7 +275,13 @@ background-position-x: center;"
                         </li>
                     </ul>
 
-                    <a href="#ContactUS" class="btn btn-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Delux"
+                            data-product-description="Delux web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
@@ -298,13 +324,18 @@ background-position-x: center;"
                             nejsou zahrnuty v ceně
                         </li>
                     </ul>
-                    <a href="#ContactUS" class="btn btn-outline-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Premium"
+                            data-product-description="Prémiový web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <section id="Services3" class="container mt-5">
     <div class="row justify-content-around">
         <div class="col-lg-4 col-xxl-3 mb-4">
@@ -341,7 +372,13 @@ background-position-x: center;"
                         </li>
                     </ul>
 
-                    <a href="#ContactUS" class="btn btn-outline-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Basic"
+                            data-product-description="Basic web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
@@ -385,7 +422,13 @@ background-position-x: center;"
                         </li>
                     </ul>
 
-                    <a href="#ContactUS" class="btn btn-dark btn-lg mt-auto">To chci</a>
+                    <button type="button" class="btn btn-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Delux"
+                            data-product-description="Delux web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
@@ -428,14 +471,74 @@ background-position-x: center;"
                             nejsou zahrnuty v ceně
                         </li>
                     </ul>
-                    <button class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="test">To chci</button>
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#productModal"
+
+                            data-product-image="ProductDeluxe.png" data-product-name="Premium"
+                            data-product-description="Prémiový web na míru"
+                    >To chci
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<div class="modal" tabindex="-1" id="productModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalHeader"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-3 modal-image">
+                    <p id="modalText" class="mt-4"></p>
+                    <label class="form-label" for="modalEmail">Email na kterém vás budeme kontaktovat:</label>
+                    <input class="form-control" id="modalEmail" type="text">
 
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary text-white" data-bs-dismiss="modal"
+                    >Kontaktujte nás
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<footer class="py-4 bg-light text-center">
+    <span>Web byl vytvořen Markem Polamem</span>
+</footer>
+
+<script src="./js/bootstrap.min.js"></script>
+<script>
+    const productModal = document.getElementById('productModal');
+    if (productModal) {
+        productModal.addEventListener('show.bs.modal', event => {
+            // Button that triggered the modal
+            const button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            const productImg = button.getAttribute('data-product-image');
+            const productName = button.getAttribute('data-product-name');
+            const productDescription = button.getAttribute('data-product-description');
+            // If necessary, you could initiate an Ajax request here
+            // and then do the updating in a callback.
+
+            // Update the modal's content.
+            const modalTitle = productModal.querySelector('.modal-title');
+            const modalImage = productModal.querySelector('.modal-image');
+            const modalDescription = productModal.querySelector('.modal-body #modalText');
+
+            modalTitle.textContent = productName;
+            modalImage.src = 'imgs/' + productImg;
+            modalDescription.textContent = productDescription;
+        })
+    }
+</script>
 
 </body>
 </html>
